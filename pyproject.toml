@@ -1,0 +1,7 @@
+[project]
+name = "serving-facts"
+version = "0.0.1"
+description = "Open tables of facts about model serving: releases, architectures, flags, known issues, measured startups."
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = ["duckdb>=1.0", "readyml @ git+https://github.com/subordinal/readyml"]
