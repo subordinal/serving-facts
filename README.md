@@ -54,7 +54,7 @@ Three stages, in [`pipeline/`](pipeline):
 
 1. **Extract** (`extract.py`): read each source and write flat rows to `staging/` as JSON lines. Parsing only.
 2. **Build** (`run.py`): DuckDB SQL turns staging into typed tables. Every column type is set here.
-3. **Check** (`run.py`): 12 queries, each counting rows that break a rule (unique keys, allowed values, durations that add up). Any violation stops the run before a table is written.
+3. **Check** (`run.py`): 13 queries, each counting rows that break a rule (unique keys, allowed values, durations that add up). Any violation stops the run before a table is written.
 
 ```
 pip install duckdb git+https://github.com/subordinal/readyml
